@@ -1,0 +1,178 @@
+Learning-by-doing
+=================
+////
+Yotta W. Yotto <yotta.w.cto@gmail.com>
+v0.0, November 2017: initial commit
+////
+:author: Yotta W. Yotto
+:email: yotta.w.cto@gmail.com
+:data: 2017-11-26
+:version: v0.0
+:toc:
+
+== Document header
+
+== Attributes
+
+Author is {author}
+
+Version is {version}
+
+My name is {myname}
+
+Line with bad attribute {qwe} will be deleted
+
+escaped: \{qwe} and +++{qwe}+++
+
+
+== Paragraphs
+
+.foo
+normal
+bar
+
+.foo
+    indented
+    bar
+
+.foo c++ numbered code
+[source, cpp, numbered]
+auto s = "hello, world!";
+std::cout << s << "\n";
+
+
+== Blocks
+.normal block
+----
+*normal* block
+----
+
+.code block
+[source, cpp]
+----
+auto s = "this is code block!";
+std::cout << s << "\n";
+----
+
+.sidebar
+****
+*sidebar* block
+****
+
+.example block
+====
+*example* block
+====
+
+.comment block
+////
+ignored comments
+////
+
+.literal block
+....
+*literal* block
+....
+
+.quote block
+[quote, Bjarne Stroustrup, The C++ Programming Language]
+____
+There are only two kinds of languages: the ones people complain about and the
+ones nobody uses.
+____
+
+
+== Text
+forced +
+line break
+
+normal, _italic_, *bolc*, +mono+.
+
+``double quoted'', `single quoted'.
+
+normal, ^super^, ~sub~.
+
+command: `rm / -rf`
+
++mono *bold*+
+
+`passthru *bold*`
+
+Path: '/home/someone/somefile'
+
+[red]#red text#
+
+[yellow-background]#on yellow#
+
+[big]#large#
+
+[red yellow-background big]*all bold*
+
+[underline]#Underline text#
+
+[overline]#overline text# and
+
+[blue line-through]*bold blue and line-through*
+
+// comment
+
+(C) (R) (TM) -- ... -> <- => <=
+
+''''
+
+== Macros: links, images and include
+
+== Lists
+.bulleted
+* foo
+* foo
+- foo
+- foo
+* foo
+** foo
+*** foo
+
+.bulleted
+- foo
+* foo
+** foo
+
+.ordered
+. foo
+. foo
+.. foo
+.. foo
+... foo
+... foo
+.. foo
+.. foo
+. foo
+. foo
+
+.labeled
+
+.labeled horizontal
+
+.Q&A
+[qanda]
+question 1::
+    answer 1
+question 2::
+    answer 2
+
+.break list
+
+.continuation
+
+
+== Tables
+.an example table
+[options="header,footer"]
+
+// thanks for the help of
+|====
+| col1 | col2 | col3
+|    1 | 11   |  111
+|    2 | 22   |  222
+|====
+
